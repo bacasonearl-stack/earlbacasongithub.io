@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earl Bacason | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #071923;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #071923;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            border-bottom: 1px solid #12313d;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #28d9d9;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #28d9d9;
+        }
+
+        section {
+            padding: 100px 8%;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 8vw, 80px);
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: #28d9d9;
+        }
+
+        .cursor {
+            color: #28d9d9;
+            animation: blink 0.7s infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .hero p {
+            max-width: 700px;
+            color: #b8c7cc;
+            font-size: 17px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #28d9d9;
+            color: #071923;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+
+        .about {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            color: #c4d0d4;
+        }
+
+        .skills,
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #0c2733;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #17404e;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #28d9d9;
+        }
+
+        .card h3 {
+            color: #28d9d9;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #b8c7cc;
+        }
+
+        .education {
+            text-align: center;
+        }
+
+        .education h3 {
+            color: #28d9d9;
+            font-size: 24px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            color: #b8c7cc;
+            margin: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #05131a;
+            color: #81969d;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 15px 5%;
+            }
+
+            nav a {
+                margin-left: 8px;
+                font-size: 11px;
+            }
+
+            section {
+                padding: 90px 6%;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">EARL.</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+
+    <h1>
+        I'm a <span class="highlight" id="typing">BSEE Student</span>
+        <span class="cursor">|</span>
+    </h1>
+
+    <p>
+        I'm a Bachelor of Science in Electrical Engineering student
+        interested in electrical systems, technology, and engineering.
+        I also do video editing and graphic designing as a freelancer.
+    </p>
+
+    <a href="#projects" class="btn">View My Projects</a>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+
+    <h2 class="title">About Me</h2>
+
+    <div class="about">
+        <p>
+            Hi! I'm Earl Bacason, a Bachelor of Science in Electrical
+            Engineering student. I am interested in learning about
+            electrical systems, technology, and engineering.
+        </p>
+
+        <br>
+
+        <p>
+            Aside from engineering, I also enjoy video editing and
+            graphic designing. I continue to improve my skills by
+            creating different projects and learning new things.
+        </p>
+    </div>
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+
+    <h2 class="title">My Skills</h2>
+
+    <div class="skills">
+
+        <div class="card">
+            <h3>Electrical Engineering</h3>
+            <p>Basic knowledge of electrical systems and engineering concepts.</p>
+        </div>
+
+        <div class="card">
+            <h3>Computer Skills</h3>
+            <p>Basic computer, software, and digital technology skills.</p>
+        </div>
+
+        <div class="card">
+            <h3>Video Editing</h3>
+            <p>Creating and editing videos for social media and personal projects.</p>
+        </div>
+
+        <div class="card">
+            <h3>Graphic Designing</h3>
+            <p>Creating simple graphics, posters, logos, and digital designs.</p>
+        </div>
+
+        <div class="card">
+            <h3>Technical Drawing</h3>
+            <p>Basic technical drawing and AutoCAD skills.</p>
+        </div>
+
+        <div class="card">
+            <h3>Problem Solving</h3>
+            <p>Finding practical solutions to different problems.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+
+    <h2 class="title">My Projects</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <h3>Electrical Engineering</h3>
+            <p>
+                School projects related to electrical systems,
+                circuits, and engineering.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Video Editing</h3>
+            <p>
+                Edited videos for personal projects and social media.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Graphic Design</h3>
+            <p>
+                Created posters, logos, thumbnails, and other graphics.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Technical Drawing</h3>
+            <p>
+                Created technical drawings using basic AutoCAD skills.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- EDUCATION -->
+<section class="education">
+
+    <h2 class="title">Education</h2>
+
+    <h3>Bachelor of Science in Electrical Engineering</h3>
+
+    <p>
+        BSEE Student
+    </p>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+
+    <h2 class="title">Contact Me</h2>
+
+    <p>Interested in working with me or knowing more about my work?</p>
+
+    <p>📧 Email: your-email@example.com</p>
+
+</section>
+
+<footer>
+    <p>© 2026 Earl Bacason. All Rights Reserved.</p>
+</footer>
+
+<script>
+
+    const words = [
+        "BSEE Student",
+        "Electrical Engineering Student",
+        "Freelancer",
+        "Video Editor",
+        "Graphic Designer"
+    ];
+
+    let wordIndex = 0;
+    let letterIndex = 0;
+    let deleting = false;
+
+    const typing = document.getElementById("typing");
+
+    function typeEffect() {
+
+        const currentWord = words[wordIndex];
+
+        if (!deleting) {
+
+            typing.textContent =
+                currentWord.substring(0, letterIndex + 1);
+
+            letterIndex++;
+
+            if (letterIndex === currentWord.length) {
+                deleting = true;
+                setTimeout(typeEffect, 1500);
+                return;
+            }
+
+        } else {
+
+            typing.textContent =
+                currentWord.substring(0, letterIndex - 1);
+
+            letterIndex--;
+
+            if (letterIndex === 0) {
+                deleting = false;
+                wordIndex++;
+
+                if (wordIndex === words.length) {
+                    wordIndex = 0;
+                }
+            }
+        }
+
+        setTimeout(typeEffect, deleting ? 50 : 100);
+    }
+
+    typeEffect();
+
+</script>
+
+</body>
+</html>
